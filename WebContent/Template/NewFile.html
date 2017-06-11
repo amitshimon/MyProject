@@ -1,0 +1,28 @@
+
+<h2>Get All Companies</h2>
+<br /> <br /> <br /> <br /> 
+<input type="text" ng-model="search" />
+<ul class="view">
+	<li ng-repeat="company in companies | filter:search"
+		ng-click="setSelectedCompany(company)">{{company.companyName}}</li>
+</ul>
+<main ng-if="selectedCompany">
+<h2>Company Name:{{selectedCompany.companyName}}</h2>
+<ul class="view">
+
+	<li>Company Id: {{selectedCompany.id}}</li>
+	<li>Company Email:{{selectedCompany.email}}</li>
+	<ul class="view" ng-repeat="coupon in selectedCompany.coupons">
+		<li>Id: {{coupon.id}}</li>
+		<li>Title: {{coupon.title}}</li>
+		<li>Start Date: {{coupon.startDate}}</li>
+		<li>End Date: {{coupon.endDate}}</li>
+		<li>Amount: {{coupon.amount}}</li>
+		<li>Type: {{coupon.type}}</li>
+		<li>Massage: {{coupon.massage}}</li>
+		<li>Price: {{coupon.price}}</li>
+		<li>Image: {{coupon.imag}}</li>
+	</ul>
+
+</ul>
+</main>

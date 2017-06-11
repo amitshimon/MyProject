@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>login</title>
+<link rel="stylesheet" type="text/css" href="generalCss/login.css">
+</head>
+<body>
+	<div id="header">
+		<h3 class="logo">Welcome</h3>
+	</div>
+	<div id="login" class="absolute-center">
+		<div>
+			<h3 class="h3der">
+				Log<span class="word">in</span>
+			</h3>
+		</div>
+		<form method="post" action="login" id="form">
+			<ul class="no-bullets">
+				<li><input name="user" type="text" placeholder="User Name"
+					size="18"></li>
+				<li><input name="password" type="password"
+					placeholder="Password" size="18"></li>
+				<li><select name="type">
+						<option value="disabled selected">Select your role</option>
+						<option value="ADMIN">ADMIN</option>
+						<option value="COMPANY">COMPANY</option>
+						<option value="CUSTOMER">CUSTOMER</option>
+
+				</select></li>
+				<li><a style="color: white;"
+					href="/CouponProject/forgotPassword.html">Forgot Password?</a></li>
+			</ul>
+			<br />
+			<div style="padding-left: 45px;">
+				<input type="submit" value="Sing in">
+			</div>
+		</form>
+		</div>
+</body>
+</html>

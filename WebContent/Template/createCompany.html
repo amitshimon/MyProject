@@ -1,0 +1,31 @@
+<h1>Create Company</h1>
+<br />
+<br />
+<br />
+<br />
+<form name="company" id="reset">
+	<div id="company" style="float: left">
+		<div id="cHeader">
+			<span>Create Company</span>
+		</div>
+		<br /> <br />
+		<div>
+			<div style="color: red;">{{company.message}}</div>
+			<input id="companyName" ng-model="companyName" type="text"
+				placeholder="Name" required="required">
+		</div>
+		<div>
+			<input ng-model="password" type="password" placeholder="Password"
+				required="required">
+		</div>
+		<div>
+			<input ng-model="email" type="email" placeholder="Email"
+				required="required">
+		</div>
+		<div>
+			<input class="button" type="button" ng-click="createCompany()"
+				value="Send" ng-disabled="company.$invalid">
+		</div>
+		<div id="fotter">site design / logo © 2017</div>
+	</div>
+</form>

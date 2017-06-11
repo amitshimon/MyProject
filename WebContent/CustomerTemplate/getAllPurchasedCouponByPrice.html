@@ -1,0 +1,54 @@
+<h1>Get All Purchased Coupon By Price</h1>
+<div id="input">
+	<p>
+		<input type="text" ng-model="search" size="30"
+			placeholder="Serch Me!!!">
+	</p>
+	<input type="number" ng-model="price" placeholder="Price"
+		required="required"> <input type="number" ng-model="price2"
+		placeholder="Second Price" required="required"> <input
+		type="button" ng-click="purchasedByPrice()" value="Send">
+</div>
+<main ng-if="purchasedByPrice" ng-repeat="webCustomer in webCustomers">
+<div id="company" style="float: left;">
+	<div id="cHeader">
+		<p>Customer Name:{{webCustomer.customerName}}</p>
+	</div>
+	<p>Customer Email:{{webCustomer.customerEmail}}</p>
+	<p>Customer id:{{webCustomer.id}}</p>
+	<br /> <br />
+	<div id="fotter">site design / logo © 2017</div>
+</div>
+<div id="coupon"
+	ng-repeat="coupon in webCustomer.coupons | filter:search">
+
+	<div id="cHeader">
+		<span>Title:{{coupon.title}}</span>
+		<div style="float: right;">End At:{{coupon.endDate}}</div>
+	</div>
+	<span style="float: right"> 
+	    <img id="image" ng-src="data:image/pang;base64,{{coupon.imag}}" width="50" height="50" />
+	</span>
+	<div>
+		<span class="outside">Price:</span> <span class="inside">{{coupon.price|
+			currency:"ILS-"}}</span>
+	</div>
+	<p>
+		<span class="outside">Still Left:</span> <span class="inside">{{coupon.amount}}</span>
+	</p>
+	<p>
+		<span class="outside">Id :</span><span class="inside">{{coupon.id}}</span>
+	</p>
+	<p>
+		<span class="outside">Start Date :</span> <span class="inside">{{coupon.startDate}}</span>
+	</p>
+	<p>
+		<span class="outside">type :</span><span class="inside">{{coupon.type}}</span>
+	</p>
+	<p>
+		<span class="outside">Message:</span> <span class="inside">{{coupon.massage}}</span>
+	</p>
+	<br /> <br /> <br />
+	<div id="fotter">site design / logo © 2017</div>
+</div>
+</main>

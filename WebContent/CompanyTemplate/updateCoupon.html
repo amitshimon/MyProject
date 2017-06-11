@@ -1,0 +1,44 @@
+<h1>Update Company</h1>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<form id="reset" name="invalid">
+	<div class="album " >
+		<div class="panel-heading">
+			<div>
+				<input type="date" name="endDate" placeholder="End Date"
+					ng-model="endDate" required>
+			</div>
+		</div>
+		<br /> <br />
+		<div class="description">
+			<lu class="">
+			<li><input type="number" name="id" placeholder="Id"
+				ng-model="id" required></li>
+			<li><input type="number" name="price" placeholder="Price"
+				ng-model="price" required></li>
+			<li><input type="number" name="amount" placeholder="Amount"
+				ng-model="amount" required></li>
+			<li><input type="text" placeholder="Title" size="15"
+				ng-model="title" required></li>
+			</lu>
+			<p>
+				<textarea rows="4" ng-model="message" placeholder="Description"
+					style="width: 100%" required="required"></textarea>
+			</p>
+			<p>
+				
+				<button class="btn btn-success" type="button"
+					ng-click="UploadFile()" ng-disabled="invalid.$invalid">Add
+					New Coupon</button>
+			</p>
+			<p>
+				<input type="reset" value="Reset">
+			</p>
+		</div>
+	</div>
+</form>

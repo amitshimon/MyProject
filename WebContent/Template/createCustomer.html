@@ -1,0 +1,31 @@
+<h1>Create Customer</h1>
+<br />
+<br />
+<br />
+<br />
+<form name="customer" id="reset">
+	<div id="company" style="float: left">
+		<div id="cHeader">
+			<span>Create Customer</span>
+		</div>
+		<br /> <br />
+		<div>
+			<div style="color: red;">{{customer.message}}</div>
+			<input id="name" ng-model="name" type="text" placeholder="Name"
+				required="required">
+		</div>
+		<div>
+			<input ng-model="password" type="password" placeholder="Password"
+				required="required">
+		</div>
+		<div>
+			<input ng-model="email" type="email" placeholder="Email"
+				required="required">
+		</div>
+		<div>
+			<input class="button" type="button" ng-click="createCustomer()"
+				value="Send" ng-disabled="customer.$invalid">
+		</div>
+		<div id="fotter">site design / logo © 2017</div>
+	</div>
+</form>

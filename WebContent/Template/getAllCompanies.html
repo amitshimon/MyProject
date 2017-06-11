@@ -1,0 +1,56 @@
+
+<h2>Get All Companies</h2>
+<br />
+<br />
+<br />
+<br />
+<input type="text" ng-model="search" placeholder="Search Me!!! " />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<p>For more details press on company name:</p>
+<br />
+<br />
+<ul class="view">
+	<li ng-repeat="company in companies | filter:search "
+		ng-click="setSelectedCompany(company)">{{company.companyName}}</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<main ng-if="selectedCompany">
+<div id="company" style="float: left">
+	<div id="cHeader" >
+		<h4>Company Name:{{selectedCompany.companyName}}</h4>
+	</div>
+	<p>Company Id: {{selectedCompany.id}}</p>
+	<p>Company Email:{{selectedCompany.email}}</p>
+	<br />
+<br />
+<br />
+	<div id="fotter">site design / logo © 2017</div>
+</div>
+<div id="coupon" ng-repeat="coupon in selectedCompany.coupons | filter:search">
+	<div id="cHeader" >
+		Id: {{coupon.id}}
+		<div style="float: right">End Date:({{coupon.endDate}})</div>
+		<br /> <br />
+	</div>
+	<span style="float: right">
+		<img ng-src="data:image/pang;base64,{{coupon.imag}}"  />
+	</span>
+	<p>Title: {{coupon.title}}</p>
+	<p>Start Date: {{coupon.startDate}}</p>
+	<p>Amount: {{coupon.amount}}</p>
+	<p>Type: {{coupon.type}}</p>
+	<p>Message: {{coupon.massage}}</p>
+	<p>Price: {{coupon.price | currency }}</p>
+	<br /> <br />
+	<div id="fotter">site design / logo © 2017</div>
+</div>
+</main>

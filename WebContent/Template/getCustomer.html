@@ -1,0 +1,46 @@
+<h1>Get Customer</h1>
+<br />
+<br />
+<br />
+<br />
+<div>
+	<input type="text" placeholder="Search Me...!!" ng-model="id">
+</div>
+<div>
+	<input type="number" placeholder="id" ng-model="id" required="required">
+</div>
+<aside ng-if="customer">
+	<div id="company" style="float: left">
+		<div id="cHeader">
+			<h4>Customer Name:{{customer.customerName}}</h4>
+		</div>
+		<p>Customer Id: {{customer.id}}</p>
+		<p>Customer Email:{{customer.customerEmail}}</p>
+		<br /> <br /> <br />
+		<div id="fotter">site design / logo © 2017</div>
+	</div>
+	<div id="coupon" ng-repeat="coupon in customer.coupons | filter:search">
+		<div id="cHeader">
+			Id: {{coupon.id}}
+			<div style="float: right">End Date:({{coupon.endDate}})</div>
+			<br /> <br />
+		</div>
+		<span style="float: right"> <img ng-src="data:image/pang;base64,{{coupon.imag}}" />
+		</span>
+		<p>Title: {{coupon.title}}</p>
+		<p>Start Date: {{coupon.startDate}}</p>
+		<p>Amount: {{coupon.amount}}</p>
+		<p>Type: {{coupon.type}}</p>
+		<p>Message: {{coupon.massage}}</p>
+		<p>Price: {{coupon.price | currency }}</p>
+		<br /> <br />
+		<div id="fotter">site design / logo © 2017</div>
+	</div>
+</aside>
+<br />
+<br />
+<br />
+<div>
+	<input class="button" type="button" value="Send"
+		ng-click="getCustomer()">
+</div>

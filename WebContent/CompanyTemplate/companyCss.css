@@ -1,0 +1,376 @@
+@CHARSET "windows-1255";
+
+@IMPORT
+	url("https://fonts.googleapis.com/css?family=Droid+Serif|Lora:400,700i|Merriweather|Taviraj")
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lora';
+}
+
+div#header {
+	width: 100%;
+	height: 75px;
+	background-color: #2980b9;
+	margin: 0 auto;
+}
+
+::-webkit-input-placeholder {
+	font-weight: bold;
+	color: black;
+}
+
+::-moz-placeholder {
+	color: #000000;
+}
+
+:-ms-input-placeholder {
+	color: #000000;
+}
+
+:-moz-placeholder {
+	color: #000000;
+}
+
+div#wf {
+	width: 100%;
+	height: 50px;
+	background-color: #2980b9;
+	margin: 0 auto;
+	opacity: .9;
+}
+
+div#f.logo {
+	float: right;
+	margin-top: 18px;
+	margin-left: 10px;
+}
+
+span#word {
+	font-size: 1.8em;
+	color: #fff;
+	font-weight: 600;
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	float: right;
+	margin-top: 18px;
+	margin-left: 10px;
+}
+
+.logo h3 {
+	font-size: 1.3em;
+	color: #fff;
+}
+
+h1 {
+	text-align:center;
+	font-size: 2.6em;
+	color: #000000;
+	text-shadow: 2px 2px blue;
+}
+
+p {
+	color: white;
+}
+
+.logo h3 span {
+	font-weight: 600;
+}
+
+div#container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+div#sidebar {
+	width: 250px;
+	height: 100%;
+	background-color: #477584;
+	float: left;
+}
+
+div#content {
+	width: auto;
+	margin-left: 250px;
+	height: 100%;
+	background-color: white;
+	padding: 15px;
+	resize: vertical;
+	overflow: auto;
+}
+li {
+	list-style: none;
+}
+
+ul#nav li {
+	list-style: none;
+}
+
+.link {
+	color: #ffffff;
+	font-weight: bold;
+	display: block;
+	padding: 12px;
+	font-size: 0.8em;
+	border-bottom: 1px solid #0A0A0A;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	display: block;
+}
+
+a:hover {
+	background-color: #000000;
+	color: #ffffff;
+	padding-left: 30px;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+img#image:hover {
+	width: 150;
+	height: 150;
+}
+
+ul {
+	list-style-type: none;
+}
+
+div#inner {
+	width: 60%;
+	margin: 0 auto;
+	
+}
+
+input.ng-invalid {
+	background-color: ff2222;
+}
+
+input.ng-valid {
+	background-color: lightgreen;
+}
+
+textarea {
+	padding: 4px;
+	border-radius: 4px;
+	border: 1px solid #bbb;
+}
+
+input[type=text] {
+	padding: 8px;
+	border-radius: 4px;
+	border: 2px solid #c0c0c0;
+	border-radius: 8px;
+}
+
+input[type=email] {
+	padding: 8px;
+	border-radius: 4px;
+	border: 2px solid #c0c0c0;
+	border-radius: 8px;
+}
+
+input[type=password] {
+	padding: 8px;
+	border-radius: 8px;
+	border: 2px solid #c0c0c0;
+	border-radius: 8px;
+}
+
+input[type=date] {
+	padding: 1px;
+	border-radius: 2px;
+	border: 2px solid #c0c0c0;
+	border-radius: 8px;
+}
+
+input[type=number] {
+	padding: 8px;
+	border-radius: 10px;
+	border: 2px solid #c0c0c0;
+}
+
+select {
+	padding: 8px;
+	border-radius: 10px;
+	border: 2px solid #c0c0c0;
+}
+
+input[type=button] {
+	background-color: #c0c0c0;
+	border: medium;
+	color: #400040;
+	padding: 17px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	border-radius: 8px;
+	font-weight: bold;
+}
+input[type=reset] {
+	background-color: red;
+	border: medium;
+	color: #000000;
+	padding: 17px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius:8px;
+	font-weight: bold;
+}
+
+input[type=button]:hover {
+	background-color: #8080c0;
+	padding-left: 35px;
+}
+
+div#coupon {
+	border: 2px solid #8080ff;
+	border-radius: 5px;
+	width: 300px;
+	margin-right: 10px;
+	min-height: 200px;
+	background-color: white;
+	font-stretch: normal;
+	font-weight: bold;
+	color: #000000;
+	padding: 2px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 5px #888888;
+    
+	
+}
+
+div#company {
+	float: left;
+	border: 2px solid #000040;
+	border-radius: 7px;
+	width: 350px;
+	margin-bottom: 30px;
+	background-color: white;
+	min-height: 120px;
+	font-stretch: normal;
+	font-weight: bold;
+	padding: 2px;
+	display: inline-block
+}
+
+div#cHeader {
+	color: white;
+	background-color: #8080c0;
+}
+
+div#fotter {
+	background-color: gray;
+}
+
+div.album {
+border: 2px solid #8080ff;
+	border-radius: 5px;
+	width: 300px;
+	margin-right: 10px;
+	min-height: 200px;
+	background-color: #c0c0c0;
+	font-stretch: normal;
+	font-weight: bold;
+	color: #000000;
+	padding: 2px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px; 
+    box-shadow: 10px 10px 5px #888888;
+}
+
+div.album div.description {
+	padding: 10px;
+}
+
+.inside {
+	font-family: Droid;
+	color: #34495e;
+	font-weight: bold;
+}
+
+.outside {
+	font-family: serif;
+	color: #3e445b;
+	font-style: italic;
+}
+div#input {
+	width: 640px; 
+	height: auto;
+	margin: 0 auto;
+	padding-left: 225px;
+	
+}
+input[type="date"]:before {
+	content: attr(placeholder) !important;
+	color: #000000;
+	margin-right: 0.5em;
+	padding-left: 100px;
+	width: 30px;
+	border-radius: 20px;
+}
+
+
+  @keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf3 img.top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+animation-direction: alternate;
+}
+#cf3 img.middle {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+animation-direction: alternate;
+}
+#cf3 {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf3 img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}

@@ -1,0 +1,20 @@
+<h1>Update Customer</h1>
+<br />
+<br />
+<br />
+<br />
+<div style="color: red;">{{customer.message}}</div>
+<ul>
+	<li><input ng-model="password" type="password"
+		placeholder="Password" required="required"></li>
+	<li><input ng-model="id" type="number" placeholder="Id"
+		required="required"></li>
+	<li><input ng-model="email" type="email" placeholder="Email"
+		required="required"></li>
+</ul>
+<br />
+<br />
+<p>
+	<input class="button" type="button" ng-click="updateCustomer()"
+		value="Send">
+</p>

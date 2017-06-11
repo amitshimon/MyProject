@@ -1,0 +1,347 @@
+@CHARSET "windows-1255";
+
+@IMPORT
+	url("https://fonts.googleapis.com/css?family=Droid+Serif|Lora:400,700i|Merriweather|Taviraj")
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lora';
+}
+
+div#header {
+	width: 100%;
+	height: 75px;
+	background-color: #2980b9;
+	margin: 0 auto;
+	opacity: .9;
+}
+
+::-webkit-input-placeholder {
+	font-weight: bold;
+	color: black;
+}
+
+::-moz-placeholder {
+	color: #000000;
+}
+
+:-ms-input-placeholder {
+	color: #000000;
+}
+
+:-moz-placeholder {
+	color: #000000;
+}
+
+div#wf {
+	width: 100%;
+	height: 50px;
+	background-color: #2980b9;
+	margin: 0 auto;
+	opacity: .9;
+}
+
+div#f.logo {
+	float: right;
+	margin-top: 18px;
+	margin-left: 10px;
+}
+
+span#word {
+	font-size: 1.8em;
+	color: #c0392b;
+	font-weight: 600;
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	float: right;
+	margin-top: 18px;
+	margin-left: 10px;
+}
+
+.logo h3 {
+	font-size: 1.3em;
+	color: #fff;
+}
+
+h1 {
+	font-size: 1.3em;
+	color: #fff;
+	text-align: center;
+}
+
+
+
+.logo h3 span {
+	font-weight: 600;
+}
+
+div#container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+div#sidebar {
+	width: 250px;
+	height: 85%;
+	background-color: #00A2BF;
+	float: left;
+}
+
+div#content {
+	width: auto;
+	margin-left: 250px;
+	height: 85%;
+	background-color: #000000;
+	padding: 15px;
+	resize: vertical;
+	overflow: auto;
+}
+
+body {
+	background: url(dede.jpg) no-repeat left top;
+	background-size: 100%;
+}
+
+ul#nav {
+	
+}
+
+li {
+	list-style: none;
+}
+
+ul#nav li {
+	list-style: none;
+}
+
+.link {
+	color: #ffffff;
+	font-weight: bold;
+	display: block;
+	padding: 12px;
+	font-size: 0.8em;
+	border-bottom: 1px solid #0A0A0A;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	display: block
+}
+
+a:hover {
+	background-color: white;
+	color: #000000;
+	padding-left: 30px;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+ul {
+	list-style-type: none;
+}
+
+div#inner {
+	width: 60%;
+	margin: 0 auto;
+}
+
+input.ng-invalid {
+	background-color: #ff2222;
+}
+
+input.ng-valid {
+	background-color: lightgreen;
+}
+
+textarea {
+	padding: 4px;
+	border-radius: 8px;
+	border: 1px solid #bbb;
+}
+
+input[type=text] {
+	padding: 8px;
+	border-radius: 8px;
+	border: 2px solid #c0c0c0;
+}
+
+input[type=email] {
+	padding: 8px;
+	border-radius: 8px;
+	border: 2px solid #c0c0c0;
+}
+
+input[type=password] {
+	padding: 8px;
+	border-radius: 8px;
+	border: 2px solid #c0c0c0;
+}
+
+input[type=date] {
+	padding: 1px;
+	border-radius: 8px;
+	border: 2px solid #c0c0c0;
+}
+
+input[type=number] {
+	padding: 8px;
+	border-radius: 8px;
+	border: 2px solid #c0c0c0;
+}
+
+select {
+	padding: 8px;
+	border-radius: 8px;
+	border: 2px solid #c0c0c0;
+}
+
+input[type=button] {
+	background-color: #c0c0c0;
+	border: medium;
+	color: #400040;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	border-radius: 16px;
+	font-weight: bold;
+}
+
+input[type=button]:hover {
+	background-color: #8080c0;
+	padding-left: 35px;
+	border-radius: 8px;
+}
+
+div#coupon {
+	border: 2px solid #8080ff;
+	border-radius: 5px;
+	float: right;
+	width: 300px;
+	margin-right: 10px;
+	min-height: 200px;
+	background-color: white;
+	font-stretch: normal;
+	font-weight: bold;
+	color: #000000;
+	padding: 2px;
+}
+
+div#company {
+	float: left;
+	border: 2px solid #000040;
+	border-radius: 7px;
+	width: 350px;
+	margin-right: 10px;
+	background-color: white;
+	min-height: 120px;
+	font-stretch: normal;
+	font-weight: bold;
+	padding: 2px;
+}
+
+div#cHeader {
+	color: white;
+	background-color: #8080c0;
+}
+
+div#fotter {
+	background-color: gray;
+}
+
+div.album {
+	float: right;
+	width: 300px;
+	margin-right: 10px;
+	min-height: 200px;
+	border: 2px solid #8080ff;
+	border-radius: 5px;
+	background-color: #c0c0c0;
+	left: -25%;
+	font-style: oblique;
+}
+
+div.album div.description {
+	padding: 10px;
+}
+
+.inside {
+	font-family: Droid;
+	color: #34495e;
+	font-weight: bold;
+}
+
+.outside {
+	font-family: serif;
+	color: #3e445b;
+	font-style: italic;
+}
+
+  @keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf3 img.top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+animation-direction: alternate;
+}
+#cf3 img.middle {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 7s;
+animation-direction: alternate;
+}
+#cf3 {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf3 img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+img#image:hover {
+	width: 150;
+	height: 150;
+}
+div#input {
+	width: 640px; 
+	height: auto;
+	margin: 0 auto;
+	padding-left: 225px;
+}

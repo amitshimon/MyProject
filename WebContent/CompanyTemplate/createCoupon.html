@@ -1,0 +1,55 @@
+<h1>Add New Coupon</h1>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<form id="reset" name="invalid">
+	<div class="album " >
+		<div class="panel-heading">
+			<input type="date" name="startDate" placeholder="Start Date"
+				ng-model="startDate" required>
+			<div>
+				<input type="date" name="endDate" placeholder="End Date"
+					ng-model="endDate" required>
+			</div>
+		</div>
+		<br /> <br />
+		<div class="description">
+			<lu class="">
+			<li><input type="number" name="price" placeholder="Price"
+				ng-model="price" required></li>
+			<li><input type="number" name="amount" placeholder="Amount"
+				ng-model="amount" required></li>
+			<li><input type="text" placeholder="Title" size="15"
+				ng-model="title" required></li>
+			<li><select name="type" ng-model="type" required>
+					<option value="disabled selected">Select your role</option>
+					<option value="RESTURANS">RESTAURANS</option>
+					<option value="ELECTRICTIY">ELECTRICTIY</option>
+					<option value="HEALTH">HEALTH</option>
+					<option value="SPORTS">SPORTS</option>
+					<option value="CAMPING">CAMPING</option>
+					<option value="TRAVELLING">TRAVELLING</option>
+			</select></li>
+			</lu>
+			<p>
+				<textarea rows="4" ng-model="message" placeholder="Description"
+					style="width: 100%" required="required"></textarea>
+			</p>
+			<p>
+				<input type="file"
+					onchange="angular.element(this).scope().setFile(this)"
+					required="required" /><br />
+				<button class="btn btn-success" type="button"
+					ng-click="UploadFile()" ng-disabled="invalid.$invalid">Add
+					New Coupon</button>
+			</p>
+			<p>
+				<input type="reset" value="Reset">
+			</p>
+		</div>
+	</div>
+</form>

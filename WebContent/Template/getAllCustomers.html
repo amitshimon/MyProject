@@ -1,0 +1,48 @@
+
+<h2>Get All Customers</h2>
+<br />
+<br />
+<br />
+<br />
+<input type="text" ng-model="search" placeholder="Search Me!!!" />
+<br />
+<br />
+<br />
+<p>For more details press on customer name:</p>
+<br />
+<br />
+<br />
+<ul>
+	<li ng-repeat="customer in customers | filter: search"
+		ng-click="setSelectedCustomer(customer)">Customer
+		Name:{{customer.customerName}}</li>
+</ul>
+<main ng-if="selectedCustomer">
+<div id="company" style="float: left">
+	<div id="cHeader">
+		<h4>Customer Name:{{selectedCustomer.customerName}}</h4>
+	</div>
+	<p>Customer Id: {{selectedCustomer.id}}</p>
+	<p>Customer Email:{{selectedCustomer.customerEmail}}</p>
+	<br />
+	<div id="fotter">site design / logo © 2017</div>
+</div>
+<div id="coupon"
+	ng-repeat="coupon in selectedCustomer.coupons | filter:search">
+	<div id="cHeader">
+		Id: {{coupon.id}}
+		<div style="float: right">End Date:({{coupon.endDate}})</div>
+		<br /> <br />
+	</div>
+	<span style="float: right"> <img ng-src="data:image/pang;base64,{{coupon.imag}}" />
+	</span>
+	<p>Title: {{coupon.title}}</p>
+	<p>Start Date: {{coupon.startDate}}</p>
+	<p>Amount: {{coupon.amount}}</p>
+	<p>Type: {{coupon.type}}</p>
+	<p>Message: {{coupon.massage}}</p>
+	<p>Price: {{coupon.price | currency }}</p>
+	<br /> <br />
+	<div id="fotter">site design / logo © 2017</div>
+</div>
+</main>

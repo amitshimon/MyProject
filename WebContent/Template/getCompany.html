@@ -1,0 +1,48 @@
+<h1>Get Company</h1>
+<br />
+<br />
+<br />
+<br />
+<div>
+	<p>
+		<input type="text" placeholder="Search Me!!!" ng-model="search" />
+	</p>
+	<p>
+		<input type="number" placeholder="id" ng-model="id"
+			required="required" />
+	</p>
+	<br /> <br /> <br />
+	<p>
+		<input class="button" type="button" ng-click="getCompany()"
+			value="Send" />
+	</p>
+	<main ng-if="company">
+	<div id="company" style="float: left">
+		<div id="cHeader">
+			<h4>Company Name:{{company.companyName}}</h4>
+		</div>
+		<p>Company Id: {{company.id}}</p>
+		<p>Company Email:{{company.email}}</p>
+		<br /> <br /> <br />
+		<div id="fotter">site design / logo © 2017</div>
+	</div>
+	<div id="coupon" ng-repeat="coupon in company.coupons | filter:search">
+		<div id="cHeader">
+			Id: {{coupon.id}}
+			<div style="float: right">End Date:({{coupon.endDate}})</div>
+			<br /> <br />
+		</div>
+		<span style="float: right"> <img ng-src="data:image/pang;base64,{{coupon.imag}}" />
+		</span>
+		<p>Title: {{coupon.title}}</p>
+		<p>Start Date: {{coupon.startDate}}</p>
+		<p>Amount: {{coupon.amount}}</p>
+		<p>Type: {{coupon.type}}</p>
+		<p>Message: {{coupon.massage}}</p>
+		<p>Price: {{coupon.price | currency }}</p>
+		<br /> <br />
+		<div id="fotter">site design / logo © 2017</div>
+	</div>
+
+	</main>
+</div>

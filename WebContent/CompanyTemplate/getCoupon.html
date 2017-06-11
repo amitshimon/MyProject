@@ -1,0 +1,61 @@
+<h1>Get Coupon</h1>
+<br />
+<br />
+<div id="input">
+	<p >
+		<input type="number" ng-model="id" placeholder="Id"
+			required="required" />
+	</p>
+	<p >
+		<input type="button" ng-click="getCoupon()" value="Send" />
+	</p>
+</div>
+<br />
+<br />
+<br />
+<br />
+<main ng-repeat="company in webCompany">
+<div id="company" style="float: left;">
+	<div id="cHeader">
+		<span>Company Name:{{company.companyName}}</span>
+	</div>
+	<div>Company Id:{{company.id}}</div>
+	<div>Company Email:{{company.email}}</div>
+	<br /> <br />
+	<div id="fotter">site design / logo © 2017</div>
+</div>
+<div id="coupon" ng-repeat="coupon in company.coupons | filter : id">
+
+	<div id="cHeader">
+		<span>Title:{{coupon.title}}</span>
+		<div style="float: right;">End At:{{coupon.endDate}}</div>
+	</div>
+	<span style="float: right"> <img
+		ng-src="data:image/pang;base64,{{coupon.imag}}" id="image" width="50"
+		height="50" />
+	</span>
+	<div>
+		<span class="outside">Still Left:</span> <span class="inside">{{coupon.amount}}</span>
+	</div>
+	<div>
+		<span class="outside">Id :</span><span class="inside">{{coupon.id}}</span>
+	</div>
+	<div>
+		<span class="outside">Start Date :</span> <span class="inside">{{coupon.startDate}}</span>
+	</div>
+	<div>
+		<span class="outside">type :</span><span class="inside">{{coupon.type}}</span>
+	</div>
+	<div>
+		<span class="outside">Message:</span> <span class="inside">{{coupon.massage}}</span>
+	</div>
+	<div>
+		<span class="outside">Price:</span> <span class="inside">{{coupon.price
+			| currency:"ILS-"}}</span>
+	</div>
+	<br />
+	<br />
+	<div id="fotter">site design / logo © 2017</div>
+</div>
+</main>
+

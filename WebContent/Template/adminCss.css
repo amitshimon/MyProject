@@ -1,0 +1,251 @@
+@CHARSET "windows-1255";
+
+@IMPORT
+	url("https://fonts.googleapis.com/css?family=Droid+Serif|Lora:400,700i|Merriweather|Taviraj")
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lora';
+}
+
+div#header {
+	width: 100%;
+	height: 75px;
+	background-color: #2c3e50;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	float: right;
+	margin-top: 18px;
+	margin-left: 10px;
+}
+
+.logo h3 {
+	font-size: 1.3em;
+	color: #fff;
+}
+
+.logo h3 span {
+	font-weight: 600;
+}
+
+div#container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+div#sidebar {
+	width: 250px;
+	height: 100%;
+	background-color: #171717;
+	float: left;
+}
+
+div#content {
+	width: auto;
+	margin-left: 250px;
+	height: 100%;
+	background-color: #c0c0c0;
+	padding: 15px;
+	resize: vertical;
+	overflow: auto;
+}
+
+ul#nav {
+	
+}
+
+ul#nav li {
+	list-style: none;
+}
+
+.link {
+	color: #ccc;
+	display: block;
+	padding: 12px;
+	font-size: 0.8em;
+	border-bottom: 1px solid #0A0A0A;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+
+a:hover {
+	background-color: #030303;
+	color: #fff;
+	padding-left: 30px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+div#inner {
+	width: 60%;
+	margin: 0 auto;
+}
+
+input.ng-invalid {
+	background-color: red;
+}
+
+input.ng-valid {
+	background-color: lightgreen;
+}
+
+textarea {
+	padding: 4px;
+	border-radius: 4px;
+	border: 1px solid #bbb;
+}
+
+input[type=text] {
+	padding: 8px;
+	border-radius: 4px;
+	border: 2px solid #c0c0c0;
+}
+
+input[type=email] {
+	padding: 8px;
+	border-radius: 8px;
+	border: 2px solid #c0c0c0;
+}
+
+input[type=password] {
+	padding: 8px;
+	border-radius: 8px;
+	border: 2px solid #c0c0c0;
+}
+
+input[type=date] {
+	padding: 1px;
+	border-radius: 8px;
+	border: 2px solid #c0c0c0;
+}
+
+input[type=number] {
+	padding: 8px;
+	border-radius: 8px;
+	border: 2px solid #c0c0c0;
+}
+
+select {
+	padding: 2px;
+	border-radius: 8px;
+	border: 2px solid #c0c0c0;
+}
+
+input[type=button] {
+	background-color: #ffffff;
+	border: medium;
+	color: #400040;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	border-radius: 16px;
+}
+
+.button:hover {
+	background-color: #3e8e41
+}
+
+div#coupon {
+	border: 2px solid #8080ff;
+	border-radius: 5px;
+	float: left;
+	width: 300px;
+	margin-right: 10px;
+	min-height: 200px;
+	background-color: white;
+	font-stretch: normal;
+	font-weight: bold;
+    color: #000000;
+    padding: 2px;
+    
+}
+
+div#company {
+	float: left;
+	border: 2px solid #000040;
+	border-radius: 7px;
+	width: 350px;
+	margin-right: 10px;
+	background-color: white;
+	min-height: 120px;
+	font-stretch: normal;
+	font-weight: bold;
+	padding: 2px;
+}
+div#cHeader{
+	color:white;
+	background-color: #8080c0;
+}
+div#fotter{
+	background-color: gray;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #0080c0;
+    color: white;
+    padding: 16px;
+    font-size: 12px;
+    font-style:italic;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 18px;
+	margin-right: 70px;
+	font-weight: bold;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #8080c0;
+}

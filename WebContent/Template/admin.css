@@ -1,0 +1,63 @@
+@CHARSET "utf-8";
+
+.no-bullets {
+	list-style-type: none;
+}
+
+input[type=text] {
+	background-color: #3CBC8D;
+	color: white;
+	padding: 3px 2px;
+	border-radius: 4px;
+}
+
+select {
+	background-color: #3CBC8D;
+	color: white;
+	padding: 6px 13px;
+	border-radius: 4px;
+}
+
+input[type=submit] {
+	color: white;
+	border-radius: 8px;
+	font-size: 20px;
+	background-color: #f44336;
+}
+
+input[type=submit]:hover {
+	background-color: blue; /* Green */
+	color: white;
+	border-radius: 8px;
+	font-size: 20px;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0
+		rgba(0, 0, 0, 0.19);
+}
+
+.heder {
+	widith: 800px;
+	background-color: #BDBDBD;
+	text-align: center
+}
+
+.footer {
+	background-color: #BDBDBD;
+	text-align: center;
+}
+
+.leftMenu {
+	height: 500px;
+	width: 250px;
+	background-color: #D8D8D8;
+}
+
+.mainContent {
+	height: 500px;
+	width: 750px;
+	background-color: #E6E6E6;
+}
+
+a {
+	display: block;
+	padding: 5px
+}

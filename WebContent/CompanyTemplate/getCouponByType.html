@@ -1,0 +1,69 @@
+<h1>Get Coupon`s By Type</h1>
+<br />
+<br />
+<br />
+<div id="input">
+<p>
+	<input placeholder="Search Me!!!" type="text" ng-model="search">
+</p>
+
+<ul>
+<li><select ng-model="type" ng-click="getCouponByType()" >
+		<option value="disabled selected">Select your role</option>
+		<option  value="RESTURANS">RESTURANS</option>
+		<option value="ELECTRICTIY">ELECTRICTIY</option>
+		<option value="FOOD">FOOD</option>
+		<option value="HEALTH">HEALTH</option>
+		<option value="SPORTS">SPORTS</option>
+		<option value="CAMPING">CAMPING</option>
+		<option value="TRAVELLING">TRAVELLING</option>
+</select></li>
+</ul>
+</div>
+<main ng-if="getCouponByType" ng-repeat="company in webCompany">
+<div id="company" >
+	<div id="cHeader">Company Name:{{company.companyName}}</div>
+	<div>Company Id:{{company.id}}</div>
+	<div>Company Email:{{company.email}}</div>
+	<br /> <br />
+	<div id="fotter">site design / logo © 2017</div>
+</div>
+<h3>There are {{company.coupons.length}} coupon`s to view</h3>
+<br />
+<br />
+<br />
+<div id="coupon"
+	ng-repeat=" coupon in company.coupons | filter:search | orderBy:'date'" style="float: right">
+	<div id="cHeader">
+		Cost:{{coupon.price | currency }}
+		<div style="float: right">End At:({{coupon.endDate}})</div>
+	</div>
+	<div id="">
+		<span style="float: right"> <img ng-src="data:image/pang;base64,{{coupon.imag}}" width="50" height="50" id="image" />
+		</span>
+		<div>
+			<span class="outside">Title:</span> <span class="inside">{{coupon.title}}</span>
+		</div>
+		<div>
+			<span class="outside">Still Left:</span> <span class="inside">{{coupon.amount}}</span>
+		</div>
+		<div>
+			<span class="outside">Id :</span><span class="inside">{{coupon.id}}</span>
+		</div>
+		<div>
+			<span class="outside">Start Date :</span> <span class="inside">{{coupon.startDate}}</span>
+		</div>
+		<div>
+			<span class="outside">type :</span><span class="inside">{{coupon.type}}</span>
+		</div>
+		<div>
+			<span class="outside">Message:</span> <span class="inside">{{coupon.massage}}</span>
+		</div>
+		<div>
+		<span class="outside">Price:</span> <span class="inside">{{coupon.price | currency:"ILS-"}}</span>
+	    </div>
+	</div>
+	<br /> <br />
+	<div id="fotter">site design / logo © 2017</div>
+</div>
+</main>
