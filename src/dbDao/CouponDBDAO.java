@@ -194,19 +194,7 @@ public class CouponDBDAO implements CouponDAO {
 				coupons.add(coupon);
 
 			}
-			if (coupons.size() <= 1) {
-				Coupon c = new Coupon();
-				c.setAmount(0);
-				c.setEndDate("2018-09-09");
-				c.setStartDate("2017-09-01");
-				c.setMassage("Buy this Coupon space");
-				c.setId(0);
-				c.setTitle("Buy this Coupon space");
-				c.setPrice(0);
-				c.setImag("Buy this Coupon space");
-				c.setType(CouponType.CAMPING);
-				coupons.add(c);
-			}
+			
 			return coupons;
 		} catch (SQLException e) {
 			try {
@@ -251,19 +239,7 @@ public class CouponDBDAO implements CouponDAO {
 				coupon.setId(result.getLong("id"));
 				coupons.add(coupon);
 			}
-			if (coupons.size() <= 1) {
-				Coupon c = new Coupon();
-				c.setAmount(0);
-				c.setEndDate("2018-09-09");
-				c.setStartDate("2017-09-01");
-				c.setMassage("Buy this Coupon space");
-				c.setId(0);
-				c.setTitle("Buy this Coupon space");
-				c.setPrice(0);
-				c.setImag("Buy this Coupon space");
-				c.setType(CouponType.CAMPING);
-				coupons.add(c);
-			}
+		
 			return coupons;
 		} catch (SQLException exp) {
 			try {
