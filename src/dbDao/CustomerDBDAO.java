@@ -220,19 +220,7 @@ public class CustomerDBDAO implements CustomerDAO {
 				coupon.setId(results.getLong("id"));
 				coupons.add(coupon);
 			}
-			if (coupons.size() <= 1) {
-				Coupon c = new Coupon();
-				c.setAmount(0);
-				c.setEndDate("2018-09-09");
-				c.setStartDate("2017-09-01");
-				c.setMassage("Buy this Coupon space");
-				c.setId(0);
-				c.setTitle("Buy this Coupon space");
-				c.setPrice(0);
-				c.setImag("Buy this Coupon space");
-				c.setType(CouponType.CAMPING);
-				coupons.add(c);
-			}
+			
 			return coupons;
 
 		} catch (SQLException e) {
@@ -346,19 +334,7 @@ public class CustomerDBDAO implements CustomerDAO {
 				coupon.setId(results.getLong("id"));
 				coupons.add(coupon);
 			}
-			if (coupons.size() <= 1) {
-				Coupon c = new Coupon();
-				c.setAmount(0);
-				c.setEndDate("2018-09-09");
-				c.setStartDate("2017-09-01");
-				c.setMassage("Buy this Coupon space");
-				c.setId(0);
-				c.setTitle("Buy this Coupon space");
-				c.setPrice(0);
-				c.setImag("Buy this Coupon space");
-				c.setType(CouponType.CAMPING);
-				coupons.add(c);
-			}
+			
 			return coupons;
 
 		} catch (SQLException e) {
@@ -400,19 +376,7 @@ public class CustomerDBDAO implements CustomerDAO {
 				coupons.add(coupon);
 
 			}
-			if (coupons.size() <= 1) {
-				Coupon c = new Coupon();
-				c.setAmount(0);
-				c.setEndDate("2018-09-09");
-				c.setStartDate("2017-09-01");
-				c.setMassage("Buy this Coupon space");
-				c.setId(0);
-				c.setTitle("Buy this Coupon space");
-				c.setPrice(0);
-				c.setImag("Buy this Coupon space");
-				c.setType(CouponType.CAMPING);
-				coupons.add(c);
-			}
+			
 			return coupons;
 
 		} catch (SQLException e) {
@@ -452,19 +416,7 @@ public class CustomerDBDAO implements CustomerDAO {
 				coupon.setPrice(results.getDouble("price"));
 				coupons.add(coupon);
 			}
-			if (coupons.size() <= 1) {
-				Coupon c = new Coupon();
-				c.setAmount(0);
-				c.setEndDate("2018-09-09");
-				c.setStartDate("2017-09-01");
-				c.setMassage("Buy this Coupon space");
-				c.setId(0);
-				c.setTitle("Buy this Coupon space");
-				c.setPrice(0);
-				c.setImag("Buy this Coupon space");
-				c.setType(CouponType.CAMPING);
-				coupons.add(c);
-			}
+		
 			return coupons;
 		} catch (SQLException e) {
 			try {
@@ -526,19 +478,7 @@ public class CustomerDBDAO implements CustomerDAO {
 				coupon.setId(results.getLong("id"));
 				coupons.add(coupon);
 			}
-			if (coupons.size() <= 1) {
-				Coupon c = new Coupon();
-				c.setAmount(0);
-				c.setEndDate("2018-09-09");
-				c.setStartDate("2017-09-01");
-				c.setMassage("Buy this Coupon space");
-				c.setId(0);
-				c.setTitle("Buy this Coupon space");
-				c.setPrice(0);
-				c.setImag("Buy this Coupon space");
-				c.setType(CouponType.CAMPING);
-				coupons.add(c);
-			}
+			
 			return coupons;
 
 		} catch (SQLException e) {
