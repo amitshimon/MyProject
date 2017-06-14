@@ -16,20 +16,7 @@ import exception.UpdateFailsException;
 public class CouponDBDAO implements CouponDAO {
 	private ConnectionPoolSingleton con;
 	private Connection connection;
-	static Coupon advertisingCoupon = new Coupon();
-
-	static {
-		advertisingCoupon.setAmount(1);
-		advertisingCoupon.setAmount(0);
-		advertisingCoupon.setEndDate("2018-09-09");
-		advertisingCoupon.setStartDate("2017-09-01");
-		advertisingCoupon.setMassage("Buy this Coupon space");
-		advertisingCoupon.setId(0);
-		advertisingCoupon.setTitle("Buy this Coupon space");
-		advertisingCoupon.setPrice(0);
-		advertisingCoupon.setImag("Buy this Coupon space");
-		advertisingCoupon.setType(CouponType.CAMPING);
-	}
+	
 
 	// Class constructor when initialization made connection to db
 	public CouponDBDAO() {
