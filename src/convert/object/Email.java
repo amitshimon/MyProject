@@ -12,8 +12,8 @@ import javax.mail.internet.MimeMessage;
 public class Email {
 
 	public void getPassword(String email, String passwordUser) {
-		final String user = "amitshmn@gmail.com";
-		final String password = "amit1212";
+		final String user = "";
+		final String password = "";
 		Properties properties = new Properties();
 		properties.put("mail.smtp.auth", "true");
 		properties.put("mail.smtp.starttls.enable", "true");
